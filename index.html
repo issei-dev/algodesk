@@ -1,0 +1,30 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlgoDesk デモ | AIヘルプデスク</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <div id="app" class="canvas"></div>
+
+  <nav class="switcher" aria-label="デモ画面の切り替え">
+    <span>デモ画面</span>
+    <a href="#/dashboard" data-view="admin">管理者</a>
+    <a href="#/qa" data-view="qa">従業員</a>
+    <a href="#/slack" data-view="slack">Slack</a>
+  </nav>
+  <p class="disclaimer" id="disclaimer"></p>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
